@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="Utlities.Listeners"/>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+  </listeners>
+  <test thread-count="5" name="AdminPage(failed)">
+    <classes>
+      <class name="PSMS.ApplicationPage.SecondUserPage">
+        <methods>
+          <include name="PSMSTesterModules"/>
+          <include name="tearDown"/>
+          <include name="initialization"/>
+        </methods>
+      </class> <!-- PSMS.ApplicationPage.SecondUserPage -->
+      <class name="PSMS.ApplicationPage.AdminPageValidation">
+        <methods>
+          <include name="tearDown"/>
+          <include name="PSMSMasterModules"/>
+          <include name="initialization"/>
+        </methods>
+      </class> <!-- PSMS.ApplicationPage.AdminPageValidation -->
+    </classes>
+  </test> <!-- AdminPage(failed) -->
+</suite> <!-- Failed suite [Suite] -->

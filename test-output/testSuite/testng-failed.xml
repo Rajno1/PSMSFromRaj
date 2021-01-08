@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" verbose="10" name="Failed suite [testSuite]" parallel="tests">
+  <test thread-count="2" verbose="10" name="MytestCase(failed)" parallel="tests">
+    <classes>
+      <class name="com.issi.psms.PSMS_Script.PSMS_AdminPage">
+        <methods>
+          <include name="setReports"/>
+          <include name="PSMSAdminModules"/>
+          <include name="PSMSMasterModules"/>
+          <include name="screenShotPage"/>
+          <include name="initialization"/>
+          <include name="EndReport"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.issi.psms.PSMS_Script.PSMS_AdminPage -->
+      <class name="com.issi.psms.PSMS_Script.PSMS_Admin">
+        <methods>
+          <include name="setReports"/>
+          <include name="PSMSApplication_Title"/>
+          <include name="PSMSAdminModules"/>
+          <include name="PSMSMasterModules"/>
+          <include name="screenShotPage"/>
+          <include name="tearDown"/>
+          <include name="loginDetails"/>
+          <include name="initialization"/>
+          <include name="EndReport"/>
+          <include name="LoginDetails"/>
+        </methods>
+      </class> <!-- com.issi.psms.PSMS_Script.PSMS_Admin -->
+    </classes>
+  </test> <!-- MytestCase(failed) -->
+</suite> <!-- Failed suite [testSuite] -->
